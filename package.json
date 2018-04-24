@@ -1,0 +1,33 @@
+{
+  "name": "header-parser",
+  "version": "1.0.0",
+  "description": "Utility that shortens the length of a link.",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jakeswebdev/link-shortener.git"
+  },
+  "keywords": [
+    "link",
+    "shortener",
+    "fcc",
+    "learning",
+    "nodejs",
+    "parser"
+  ],
+  "author": "Jacobo Benzaquen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jakeswebdev/link-shortener/issues"
+  },
+  "homepage": "https://github.com/jakeswebdev/link-shortener#readme"
+}
