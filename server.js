@@ -6,8 +6,13 @@ const path = require('path');
 const parser = require ('ua-parser-js');
 
 app.set('trust proxy',true);
+app.use('/public',express.static(__dirname + '/public'));
 
 app.get('/',function(request,response){
+    response.sendFile(path.join(__dirname + '/index.html'));
+});
+
+app.get('/idme',function(request,response){
     
     let address = request.ip;
     let os = parser(request.headers['user-agent']);
@@ -18,8 +23,8 @@ app.get('/',function(request,response){
     let len = lenguageArr[0];
     let obj = {"address":address,"software":userOS[1],"lenguage":len};
     response.json(obj);
-})
+});
 
 app.listen(3000,function(){
     console.log('server working!');
-})
+});
